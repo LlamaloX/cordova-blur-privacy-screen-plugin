@@ -1,0 +1,26 @@
+{
+  "name": "cordova-blur-privacy-screen-plugin",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/s3rious/cordova-blur-privacy-screen-plugin.git"
+  },
+  "keywords": [
+    "privacy",
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "s3rious a.k.a Leonid Semenov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s3rious/cordova-blur-privacy-screen-plugin/issues"
+  },
+  "homepage": "https://github.com/s3rious/cordova-blur-privacy-screen-plugin#readme"
+}

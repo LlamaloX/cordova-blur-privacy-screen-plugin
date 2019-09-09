@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-blur-privacy-screen-plugin" version="0.3.1">
+
+	<name>BlurPrivacyScreenPlugin</name>
+	<description>Secures your app sensitive data by bluring main view in task switchers on iOS (and just hiding it on Android)</description>
+	<license>MIT</license>
+	<platform name="android">
+
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="BlurPrivacyScreenPlugin">
+        <param name="android-package" value="com.s3rious.blurprivacyscreen.BlurPrivacyScreenPlugin"/>
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+
+		<source-file src="src/android/BlurPrivacyScreenPlugin.java" target-dir="src/com/s3rious/blurprivacyscreen"/>
+	</platform>
+
+	<platform name="ios">
+
+    <config-file parent="/*" target="config.xml">
+      <feature name="BlurPrivacyScreenPlugin">
+        <param name="ios-package" value="BlurPrivacyScreenPlugin"/>
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+
+		<header-file src="src/ios/BlurPrivacyScreenPlugin.h"/>
+		<source-file src="src/ios/BlurPrivacyScreenPlugin.m"/>
+	</platform>
+</plugin>
