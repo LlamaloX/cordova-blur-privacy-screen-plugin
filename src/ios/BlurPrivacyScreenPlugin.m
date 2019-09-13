@@ -5,28 +5,22 @@
  * MIT Licensed
  */
 
-#import "BlurPrivacyScreenPlugin.h"
+#import "AppDelegate.h"
 
 #define BLUR_VIEW_TAG 7331
 #define ANIMATION_SPEED 0.35f
 
-@implementation BlurPrivacyScreenPlugin
+@interface AppDelegate (BlurPrivacyScreen) {}
 
-// Initialize plugin
-- (void)pluginInitialize
-{
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onAppDidBecomeActive:)
-                                                 name:UIApplicationDidBecomeActiveNotification object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onAppWillResignActive:)
-                                                 name:UIApplicationWillResignActiveNotification object:nil];
-}
+@end
+
+@implementation AppDelegate (BlurPrivacyScreen)
 
 // On before app become disabled
-- (void)onAppWillResignActive:(UIApplication *)application
+- (void)applicationWillResignActive:(UIApplication *)application
 {
     // Get window
-    const UIWindow *window = self.webView.window;
+    const UIWindow *window = self.window;
     
     // Set it's background color
     window.backgroundColor = [UIColor clearColor];
@@ -50,14 +44,13 @@
     [UIView animateWithDuration:ANIMATION_SPEED animations:^{
         [blurView setAlpha:1];
     }];
-    
 }
 
 // On app active
-- (void)onAppDidBecomeActive:(UIApplication *)application
+- (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Get window and blur view
-    const UIWindow *window = self.webView.window;
+    const UIWindow *window = self.window;
     UIView *view = [window viewWithTag:BLUR_VIEW_TAG];
     
     // It it's present then…

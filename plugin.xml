@@ -25,7 +25,6 @@
       </feature>
     </config-file>
 
-		<header-file src="src/ios/BlurPrivacyScreenPlugin.h"/>
 		<source-file src="src/ios/BlurPrivacyScreenPlugin.m"/>
 	</platform>
 </plugin>
