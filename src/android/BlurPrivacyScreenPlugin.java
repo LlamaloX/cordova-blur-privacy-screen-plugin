@@ -14,6 +14,15 @@ import android.app.Activity;
 import android.view.Window;
 import android.view.WindowManager;
 
+import org.apache.cordova.CallbackContext;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.content.Context;
+import android.os.Bundle;
+
 public class BlurPrivacyScreenPlugin extends CordovaPlugin {
 
   @Override
@@ -22,17 +31,17 @@ public class BlurPrivacyScreenPlugin extends CordovaPlugin {
     super.initialize(cordova, webView);
     
     Activity activity = this.cordova.getActivity();
-		activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE);	
+	activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE);	
   }
   
-  @Override
-	public void onPause(Boolean multitasking) {
+@Override
+public void onPause(boolean multitasking) {
 		Activity activity = this.cordova.getActivity();
 		activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE);
 	}
 	
 	@Override
-	public void onResume(Boolean multitasking) {
+	public void onResume(boolean multitasking) {
 		Activity activity = this.cordova.getActivity();
 		activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE);		
 	}
