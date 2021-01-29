@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/s3rious/cordova-blur-privacy-screen-plugin.git"
+    "url": "git+ssh://git@github.com/LlamaloX/cordova-blur-privacy-screen-plugin.git"
   },
   "keywords": [
     "privacy",
@@ -17,10 +17,10 @@
     "cordova-android",
     "cordova-ios"
   ],
-  "author": "s3rious a.k.a Leonid Semenov",
+  "author": "Sergio Azpiazu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/s3rious/cordova-blur-privacy-screen-plugin/issues"
+    "url": "https://github.com/LlamaloX/cordova-blur-privacy-screen-plugin/issues"
   },
-  "homepage": "https://github.com/s3rious/cordova-blur-privacy-screen-plugin#readme"
+  "homepage": "https://github.com/LlamaloX/cordova-blur-privacy-screen-plugin#readme"
 }
