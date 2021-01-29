@@ -29,9 +29,7 @@ public class BlurPrivacyScreenPlugin extends CordovaPlugin {
   public void initialize(CordovaInterface cordova, CordovaWebView webView) {
     // Initialize plugin
     super.initialize(cordova, webView);
-    
-    Activity activity = this.cordova.getActivity();
-	activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE);	
+  
   }
   
 @Override
@@ -43,6 +41,6 @@ public void onPause(boolean multitasking) {
 	@Override
 	public void onResume(boolean multitasking) {
 		Activity activity = this.cordova.getActivity();
-		activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE);		
+		activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE);		
 	}
 }
