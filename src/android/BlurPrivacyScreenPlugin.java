@@ -4,7 +4,7 @@
  * Copyright (c) 2019 s3rious a.k.a Leonid Semenov. All rights reserved.
  * MIT Licensed
  */
-package com.s3rious.blurprivacyscreen;
+package com.llamalox.blurprivacyscreen;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaInterface;
