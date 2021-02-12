@@ -28,16 +28,14 @@ public class BlurPrivacyScreenPlugin extends CordovaActivity {
 
 	@Override
 	protected void onPause() {
-	  Activity activity = cordova.getActivity();
-	  activity.getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+	  getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
 	  super.onPause();
 	}
 
 	@Override
 	protected void onResume() {
 	    super.onResume();
-	    Activity activity = cordova.getActivity();
-	    activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE);     
+	    getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE);     
 	}
 	
 }
