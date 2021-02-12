@@ -1,6 +1,6 @@
 {
   "name": "cordova-blur-privacy-screen-plugin",
-  "version": "1.0.2",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,8 +14,7 @@
     "privacy",
     "cordova",
     "ecosystem:cordova",
-    "cordova-android",
-    "cordova-ios"
+    "cordova-android"
   ],
   "author": "Sergio Azpiazu",
   "license": "MIT",
