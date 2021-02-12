@@ -1,7 +1,7 @@
 {
   "name": "cordova-blur-privacy-screen-plugin-llamalox",
   "version": "0.0.1",
-  "description": "",
+  "description": "Blurs your app when put into the background to prevent iOS snapshot feature from showing sensitive information.",
   "cordova": {
     "id": "cordova-blur-privacy-screen-plugin",
     "platforms": [
@@ -19,9 +19,5 @@
     "cordova-android"
   ],
   "author": "Sergio Azpiazu",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/LlamaloX/cordova-blur-privacy-screen-plugin/issues"
-  },
-  "homepage": "https://github.com/LlamaloX/cordova-blur-privacy-screen-plugin#readme"
+  "license": "MIT"
 }
