@@ -24,12 +24,13 @@ import org.json.JSONObject;
 import android.content.Context;
 import android.os.Bundle;
 
-public class BlurPrivacyScreenPlugin extends CordovaActivity {
+public class BlurPrivacyScreenPlugin extends Activity {
 
 	@Override
 	protected void onPause() {
-	super.onPause();
 	  getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+			super.onPause();
+
 	}
 
 	@Override
