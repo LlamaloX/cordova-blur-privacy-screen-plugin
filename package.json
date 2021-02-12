@@ -1,10 +1,12 @@
 {
-  "name": "cordova-blur-privacy-screen-plugin",
+  "name": "cordova-blur-privacy-screen-plugin-llamalox",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "cordova": {
+    "id": "cordova-blur-privacy-screen-plugin",
+    "platforms": [
+      "android"
+    ]
   },
   "repository": {
     "type": "git",
