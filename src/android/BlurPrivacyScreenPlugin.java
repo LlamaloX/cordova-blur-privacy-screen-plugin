@@ -24,7 +24,19 @@ import org.json.JSONObject;
 import android.content.Context;
 import android.os.Bundle;
 
-public class BlurPrivacyScreenPlugin extends Activity {
+public class BlurPrivacyScreenPlugin extends CordovaActivity {
+	
+	@Override
+    public void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public void onDestroy()
+    {
+        super.onDestroy();
+    }
 
 	@Override
 	protected void onPause() {
