@@ -9,6 +9,7 @@ package com.llamalox.blurprivacyscreen;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaWebView;
+import org.apache.cordova.CordovaActivity;
 
 import android.app.Activity;
 import android.view.Window;
